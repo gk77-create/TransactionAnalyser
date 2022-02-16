@@ -57,7 +57,7 @@ public class CustomCsvReaderImpl implements CustomCsvReader {
 					//  If there is a reversal transaction 
 					// then remove main transaction also from map
 					//else put transaction in  map
-					if ("REVERSAL".equals(txn.getTransactionType())) {
+					if (TransactionTypeEnum.REVERSAL.name().equals(txn.getTransactionType())) {
 						map.remove(txn.getRelatedTransaction());
 					} else {
 						map.put(txn.getTransactionId(), txn);
