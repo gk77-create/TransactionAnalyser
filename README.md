@@ -29,7 +29,10 @@ transaction should be omitted from the calculation, even if the reversing transa
 outside the given time frame.
 
 # TransactionAnalyser Solution:
-Take input from csv and store the transactions in a map. Transaction ID should be 
+Take input from csv and store the transactions in a map. Transaction ID should be key of the map.As any transaction which has a reversal will not be counted to calculate relative balance, map will not store any transation which has a reversal.
+
+Ask for user search criteria , and  give the response by querying the map
+
 
 # Details to Run project
 1) Build Project
